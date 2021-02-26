@@ -1,0 +1,27 @@
+{
+	"name":		"starboy.hide-status-bar",
+	"title":	"Hide Status Bar",
+	"description":	"Adds a status bar visibility switch to the View menu",
+	"keywords":	[ "hide", "status", "bar", "starboy" ],
+	"version":	"0.0.1",
+	"license":	"MIT",
+	"homepage":	"https://github.com/StarboyCZ/hide-status-bar",
+	"author":	{
+		"name":		"Jiří Dvořák",
+		"email":	"info@dvorakj.com",
+		"url":		"https://github.com/StarboyCZ"
+	},
+	"repository": {
+		"type":		"git",
+		"url":		"https://github.com/StarboyCZ/hide-status-bar.git"
+	},
+	"engines":	{
+		"brackets":	"1.14.2"
+	},
+	"files":	[
+		"LICENSE",
+		"main.js",
+		"package.json",
+		"README.md"
+	]
+}
