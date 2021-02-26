@@ -36,7 +36,7 @@ define( function( require, exports, module )
 		}
 		function state_handler()
 		{
-			prefs.set( "checked", Boolean( cm.getChecked()));
+			prefs.set( "checked", Boolean( !cm.getChecked()));
 			e_action();
 		}
 		function e_handler()
