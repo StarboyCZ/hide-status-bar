@@ -1,5 +1,5 @@
 An extension for Adobe Brackets editor
-# External changes dialog
+# Hide Status Bar
 
 DESCRIPTION: Adds a status bar visibility switch to the View menu
 
