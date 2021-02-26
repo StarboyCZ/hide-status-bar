@@ -16,7 +16,7 @@ define( function( require, exports, module )
 		// Settings
 		var cm_id		= "starboy.hideStatusBar.toggle";
 		var prefs_id	= "starboy.hideStatusBar";
-		var prefs_def	= { checked: true };
+		var prefs_def	= { checked: false };
 
 		// Declaration
 		var prefs, cm;
@@ -24,15 +24,15 @@ define( function( require, exports, module )
 		// Action
 		function e_action()
 		{
-			if( cm.getChecked())	statusbar.hide();
-			else					statusbar.show();
+			if( cm.getChecked())	statusbar.show();
+			else					statusbar.hide();
 		}
 
 		// Event handlers
 		function cm_handler()
 		{
-			if( !cm.getChecked())	cm.setChecked( true );
-			else					cm.setChecked( false );
+			if( cm.getChecked())	cm.setChecked( false );
+			else					cm.setChecked( true );
 		}
 		function state_handler()
 		{
@@ -50,8 +50,8 @@ define( function( require, exports, module )
 
 		// Command
 		cm = cm_manager.get( cm_id );
-		if ( !cm )	cm = cm_manager.register( "Hide status bar", cm_id, cm_handler );
-		else		cm._commandFn = cm_handler;
+		if ( cm )	cm._commandFn	= cm_handler;
+		else		cm				= cm_manager.register( "Status bar", cm_id, cm_handler );
 		$( cm ).on( "checkedStateChange", state_handler );
 		cm.setChecked( prefs.get( "checked" ));
 
