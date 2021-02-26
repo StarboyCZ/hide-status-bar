@@ -3,7 +3,7 @@
 	"title":	"Hide Status Bar",
 	"description":	"Adds a status bar visibility switch to the View menu",
 	"keywords":	[ "hide", "status", "bar", "starboy" ],
-	"version":	"0.0.2",
+	"version":	"0.0.3",
 	"license":	"MIT",
 	"homepage":	"https://github.com/StarboyCZ/hide-status-bar",
 	"author":	{
